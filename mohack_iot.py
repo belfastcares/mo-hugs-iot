@@ -13,8 +13,8 @@ while 1:
     if button.value() == 1:
         light.on()
         # make request to api
-        r = requests.put('http://demo6741759.mockable.io/test', data = {'key':'value'})
-        print r.content
+        r = requests.get('http://mohack.herokuapp.com/StartEvent/2')
+        print "request made to StartEvent/2"
         # wait 1 sec and turn the light off
         time.sleep(1)
         light.off()
