@@ -15,6 +15,7 @@ while 1:
         # make request to api
         r = requests.put('http://demo6741759.mockable.io/test', data = {'key':'value'})
         print r.content
+        # wait 1 sec and turn the light off
         time.sleep(1)
         light.off()
     time.sleep(0.5)
