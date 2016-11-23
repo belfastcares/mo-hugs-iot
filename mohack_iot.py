@@ -1,6 +1,6 @@
 import time
 import requests
-import pyupm_grove as grove
+from upm import pyupm_grove as grove
 
 # Create the button object using GPIO pin 0
 button = grove.GroveButton(4)
